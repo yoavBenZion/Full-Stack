@@ -1,0 +1,76 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:400,500');
+
+/****************
+GENERAL STYLE
+*****************/
+
+body {
+  margin: 0 auto;
+  max-width: 750px;
+  font-size: 1em;
+}
+.center {
+  text-align: center;
+}
+.border-top {
+  border-top: 1px dotted grey;
+  padding-top: 10px;
+}
+
+header li{
+  display: inline-block;
+  border: 1px solid blue;
+  padding: 1px 1px;
+  margin: 1px 2px 2px 2px;
+}
+
+header ul {
+  padding-left: 0;
+}
+
+header {
+  text-align: center;
+  border-bottom: 3px solid grey;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/****************
+Links
+*****************/
+
+a.selected {
+  color: darkred;
+}
+
+/****************
+IMGES
+*****************/
+
+img {
+  max-width: 100%;
+}
+
+/****************
+SECTIONS
+*****************/
+
+.html li,
+.css li,
+.javaScript li {
+  width: 29.33333%;
+  display: inline-block;
+  margin: 0 5px;
+  background-color: lightgray;
+  border: 1px dotted black;
+}
+
+
+
+
+
+

@@ -40,7 +40,7 @@ arrayButton.addEventListener('click', ()=>{
     console.log(list_array[i].id);
     let foo = '#';
     window.location.href = foo.concat(list_array[i].id);
-   }
+   } 
   }
 });
 

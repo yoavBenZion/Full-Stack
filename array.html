@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <header>
@@ -28,65 +29,77 @@
     <p>This is Array Methodes Cheat Sheat : </p>
     <ol class="orderd-list">
       <li id="isArray"> Array.isArray()
+       <div class="no-change">no change </div>
         <p>Returns <kbd>True</kbd> or <kbd>False</kbd>. </p>
         <a><img src="img/isArray%20true.PNG"></a>
       </li>
       <li id="length"> Array.Length
-        <p>returns the number of values in the Array.</p>
+       <div class="no-change">no change </div>
+        <p>Returns the <kbd>number</kbd> of elements in the Array.</p>
         <a><img src="img/length.PNG"></a>
       </li>
       <li id="indexof"> Array.indexOf()
+       <div class="no-change">no change </div>
         <p>Returns the First <kbd>index</kbd> value, where the element that is passed as an argument (inside the parenthesis), is found. <br>
         if the element is not present, the return vaue will be <kbd>-1</kbd><br>
-        note, that you can pass a second argument, where the count</p>
+        note, that you can pass a second argument, where the index position count will start.</p>
         <img src="img/indexOf%20with%20one%20argument.PNG">
         <img src="img/indexOf%20with%202%20arguments.PNG">
         <img src="img/indexOf%20no%20element.PNG">
         <figcaption></figcaption>
       </li>
       <li id="lastindexof">Array.lastIndexOf()
+      <div class="no-change">no change </div>
        <p>Returns the First <kbd>index</kbd> value, where the element that is passed as an argument is found,
        Starting the count from the END of the Array.</p>
        <img src="img/lastIndexOf.PNG">
       </li>
       <li id="push">Array.push()
+       <div class="change">change</div>
         <p>Adds values (one or more), to the end of the Array. <br>
         Returns the array's <kbd>length</kbd></p>
         <img src="img/push.PNG">
       </li>
       <li id="pop">Array.pop()
+       <div class="change">change</div>
         <p>Removes a value from the end of the Array. <br>
         Returns the <kbd>Value</kbd> of the element that was removed.<br> if the array is empty,  Returns <kbd>Undefined</kbd></p>
         <img src="img/pop.PNG">
       </li>
       <li id="unshift">Array unshift()
+       <div class="change">change</div>
         <p>Adds values (one or more), to the begining of the Array. <br>
         Returns the array's <kbd>length</kbd></p>
         <img src="img/unshift.PNG">
       </li>
       <li id="shift"> Array.shift()
+       <div class="change">change</div>
         <p>Removes a value from the begining of the Array. <br>
         Returns the <kbd>Value</kbd> of the element that was removed.<br> if the array is empty,  Returns <kbd>Undefined</kbd>
-        <div class="change">Changes the array.</div></p>
+        </p>
         <img src="img/shift.PNG">
       </li>
       <li id="tostring"> Array.toString()
+       <div class="no-change">no change</div>
         <p>Returns the array, as one <kbd>string</kbd> seperated with a coma.<br>
         dosn't take argumants, or change the array.</p>
         <img src="img/toString.PNG">
       </li>
       <li id="join">Array.join()
+       <div class="no-change">no change</div>
         <p>Returns the array, as a <kbd>string</kbd>. the argument passed in the perantesis will be the seporater in the output.<br>
         If invoked without argumants, returns a string seporated with a come.<br> 
-        <div class="no-change">Dosn't change the array</div></p>
+        </p>
         <img src="img/join.PNG">
       </li>
       <li id="reverse">Array.reverse()
+       <div class="change">change</div>
         <p>Changes the array In Place, returns the elements of the array <kbd>reversed</kbd>.<br> and stores it in the original array
-        <div class="change">Changes the array.</div></p>
+        </p>
         <img src="img/reverse.PNG">
       </li>
-      <li id="sort">Array.sort() <div  class="change">Changes the    array.</div>
+      <li id="sort">Array.sort() 
+       <div class="change">change</div>
         <p>Sorts The Array elements in place, and returns the <kbd>Sorted</kbd> array<br>
         note ! - this method sorts by unicode, which means that the array is sorted by alphbetical order.<br>
         In order to sort array in other order, highest/ smallest number, then a<br> <kbd>Compare Function</kbd> is needed to be passed as an argument.
@@ -98,7 +111,7 @@
         <img src="img/sort%20with%20func.PNG">
       </li>
       <li id="concat">Array.concat()
-       <div class="no-change">Dosn't change the array</div>
+       <div class="no-change">no change</div>
         <p>Crating a new array, by concatenating the arguments<br> that are passed, when the method is calld.<br>
         Returns a <kbd>New array</kbd></p>
         <img src="img/concat.PNG">
@@ -138,7 +151,7 @@
       </li>
       <li id="foreach">Array.forEach()
        <div class="es5">ES5</div>
-       <div  class="change">change</div>
+       <div class="change">change</div>
         <p>
           Invokes a callback function that is passed as an argument, on each of the elmants in the array.<br>
           Returns <kbd>undefined</kbd>.
@@ -154,9 +167,9 @@
         <p>Second argumant: Becomes the value of the <kbd>This</kbd> Keyword.<strong> optional</strong>.</p>
         <img src="img/forEach.PNG">
       </li>
-      <li> Array.Map()
+      <li id="map"> Array.Map()
        <div class="es5">ES5</div>
-       <div class="no-change">no change </div>
+       <div class="no-change">no change</div>
         <p>
           Creats a new array, by calling a function for each elament in the array.<br>
         Returns a <kbd>New array</kbd>.

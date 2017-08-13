@@ -36,4 +36,17 @@ Desktops
     background-color: lightgreen;
   }
   
+  .arraySerchInput {
+    width: 150px;
+    height: 20px;
+  }
+  
+  .arrayButton {
+    width: 80px ;
+    height: 25px;
+    background-color: grey;
+    color: black;
+    font-size: 0.8rem;
+  }
+  
 }

@@ -52,5 +52,11 @@ Desktops
     color: black;
     font-size: 0.8rem;
   }
+  .array li img {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 3px;
+  }
   
 }

@@ -86,6 +86,19 @@ ARRAY
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
 }
+
+.array li {
+  margin: 50px 2px;
+  border-top: 1px solid grey;
+  padding-top: 2px;
+}
+
+.array li img {
+  width: 100%;
+  margin-right:-40px;
+  display: block;
+}
+
 .no-change,
 .change,
 .es5 {
@@ -117,6 +130,9 @@ ARRAY
 
 code {
   background-color: lightgray;
+  display: block;
+  text-align: center;
+  
 }
 
 .arraySerchInput {

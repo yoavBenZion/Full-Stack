@@ -2,7 +2,7 @@
 Mobile First
 ***************/
 
-@media (max-width: 455px) {
+@media (min-width: 1000px) {
   
   body {
     background-color: lightcyan;
@@ -15,7 +15,7 @@ Mobile First
 Tablets
 ***************/
 
-@media (min-width: 455px) and (max-width:795px) {
+@media (min-width: 1000px) and (max-width:1200px) {
   
   body {
     background-color: #F2FAEF;
@@ -30,7 +30,7 @@ Desktops
 ***************/
 
 
-@media (min-width: 1000px)  {
+@media (min-width: 1200px)  {
   
   body {
     background-color: lightgreen;

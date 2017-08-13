@@ -1,6 +1,8 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:400,500');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 /****************
 GENERAL STYLE
 *****************/
@@ -20,6 +22,7 @@ body {
 
 header li{
   display: inline-block;
+  box-sizing: border-box;
   border: 1px solid blue;
   padding: 1px 1px;
   margin: 1px 2px 2px 2px;
@@ -39,12 +42,18 @@ li {
   list-style: none;
 }
 
+kbd {
+  background-color: lightgray;
+}
+
 /****************
 Links
 *****************/
 
-a.selected {
-  color: darkred;
+li.selected {
+  color: white;
+  background-color: black;
+  padding: 2px 3px;
 }
 
 /****************
@@ -68,6 +77,49 @@ SECTIONS
   background-color: lightgray;
   border: 1px dotted black;
 }
+
+/****************
+ARRAY
+*****************/
+
+.array {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+.no-change,
+.change,
+.es5 {
+  display: inline-block;
+  border: 1px solid blue;
+  border-radius: 25%;
+  margin: 4px 15px 2px 35px;
+  padding: 1px 1px;
+}
+
+.no-change {
+  background-color: lightblue;
+  
+}
+
+.change {
+  background-color: tomato;
+  display: inline-block;
+}
+
+.es5 {
+  background-color: yellow;
+}
+
+.orderd-list li {
+  list-style: decimal;
+  border-bottom: 1px dotted grey
+}
+
+code {
+  background-color: lightgray;
+  
+}
+
 
 
 

@@ -2,26 +2,30 @@
 Mobile First
 ***************/
 
-@media (min-width: 1000px) {
+/*
+@media (max-width: 1000px) {
   
   body {
     background-color: lightcyan;
   }
   
 }
+*/
 
 
 /**************
 Tablets
 ***************/
 
-@media (min-width: 1000px) and (max-width:1200px) {
+/*
+@media (min-width: 455px) and (max-width:795px) {
   
   body {
     background-color: #F2FAEF;
   }
   
 }
+*/
 
 
 
@@ -30,10 +34,10 @@ Desktops
 ***************/
 
 
-@media (min-width: 1200px)  {
+@media (min-width: 1000px)  {
   
   body {
-    background-color: lightgreen;
+    background-color: #fff;
   }
   
   .arraySerchInput {

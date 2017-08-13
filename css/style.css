@@ -99,6 +99,11 @@ ARRAY
   display: block;
 }
 
+.array li img.imgBig {
+  width: 500px;
+  height: 200px;
+}
+
 .no-change,
 .change,
 .es5 {

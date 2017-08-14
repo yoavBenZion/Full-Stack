@@ -84,11 +84,11 @@ ARRAY
 
 .array {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .array li {
-  margin: 50px 2px;
+  margin: 80px 2px;
   border-top: 1px solid grey;
   padding-top: 2px;
 }
@@ -100,8 +100,8 @@ ARRAY
 }
 
 .array li img.imgBig {
-  width: 500px;
-  height: 200px;
+  width: 620px;
+  height: 320px;
 }
 
 .no-change,
@@ -160,8 +160,8 @@ code {
   bottom: 0px;
   right: 0px;
   opacity: 0.7;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 120px;
 }
 
 

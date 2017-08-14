@@ -33,15 +33,21 @@ const isarray = document.querySelector('#isarray');
 
 const list_array = document.querySelectorAll('.orderd-list li');
 
-
+var nothing = true ;
 arrayButton.addEventListener('click', ()=>{
   for (let i=0; i<list_array.length; i++) {
   if ((arraySerchInput.value).toLowerCase() == (list_array[i].id).toLowerCase()) {
-    console.log(list_array[i].id);
+//    console.log(list_array[i].id);
     let foo = '#';
     window.location.href = foo.concat(list_array[i].id);
-   } 
+   } else {
+     nothing = false; 
+   }
   }
+      if (nothing == false) {
+        
+//        alert('write only the( method name(like name)');
+      } arraySerchInput.value = '';
 });
 
 

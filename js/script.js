@@ -23,31 +23,31 @@ document.addEventListener('click', (event) => {
 });
 
 
-/*serch button array methods*/
+/**************************
+serch button array methods
+***************************/
+
+
 const arrayButton = document.querySelector('.arrayButton');
 const arraySerchInput = document.querySelector('.arraySerchInput');
-
-const length = document.querySelector('#length');
-
-const isarray = document.querySelector('#isarray');
-
 const list_array = document.querySelectorAll('.orderd-list li');
 
 var nothing = true ;
 arrayButton.addEventListener('click', ()=>{
   for (let i=0; i<list_array.length; i++) {
   if ((arraySerchInput.value).toLowerCase() == (list_array[i].id).toLowerCase()) {
-//    console.log(list_array[i].id);
     let foo = '#';
     window.location.href = foo.concat(list_array[i].id);
+    nothing =true;
+    break;
    } else {
-     nothing = false; 
+     nothing = false;
    }
   }
       if (nothing == false) {
-        
-//        alert('write only the( method name(like name)');
+        alert('write only the method NAME (like length)');
       } arraySerchInput.value = '';
+  
 });
 
 

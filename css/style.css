@@ -169,3 +169,7 @@ code {
 
 
 
+
+.counter a {
+  display: none;
+}

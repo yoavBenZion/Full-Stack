@@ -64,6 +64,15 @@ Desktops
     width: 500px;
     height: 300px;
   }
+   .social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px;
+  }
   
+  footer {
+    font-size: 0.75em;
+  }
+
   
 }

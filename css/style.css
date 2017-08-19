@@ -1,41 +1,37 @@
-/*Fonts*/
+/************
+Fonts
+*************/
+
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:400,500');
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/****************
-GENERAL STYLE
-*****************/
+/***********************
+GENERAL STYLE & LAYOUTS
+************************/
 
 body {
-  margin: 0 auto;
-  max-width: 750px;
   font-size: 1em;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+.main-footer, 
+.main-header {
+  width: 100%;
+  text-align: center;
+}
+
+/*General classes*/
 .center {
   text-align: center;
 }
 .border-top {
   border-top: 1px dotted grey;
   padding-top: 10px;
-}
-
-header li{
-  display: inline-block;
-  box-sizing: border-box;
-  border: 1px solid blue;
-  padding: 1px 1px;
-  margin: 1px 2px 2px 2px;
-}
-
-header ul {
-  padding-left: 0;
-}
-
-header {
-  text-align: center;
-  border-bottom: 3px solid grey;
-  font-family: 'Yantramanav', sans-serif;
 }
 
 li {
@@ -47,12 +43,44 @@ kbd {
 }
 
 /****************
+HEADER
+*****************/
+
+header li{
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  padding: 1px 1px;
+  margin: 1px 2px 2px 2px;
+  background-color: #62779B;
+  color: #fff;
+}
+
+header ul {
+  padding-left: 0;
+}
+
+header {
+  text-align: center;
+  border-bottom: 3px solid grey;
+  font-family: 'Yantramanav', sans-serif;
+  background-color: #32496D;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+}
+
+
+/****************
 Links
 *****************/
 
 li.selected {
   color: white;
-  background-color: black;
+  background-color: #E09B15;
   padding: 2px 3px;
 }
 
@@ -76,6 +104,16 @@ SECTIONS
   margin: 0 5px;
   background-color: lightgray;
   border: 1px dotted black;
+}
+
+/****************
+footer
+*****************/
+.main-footer {
+  background-color: #62779B;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1em;
 }
 
 /****************

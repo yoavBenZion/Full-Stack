@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Full Stack - 21 JQuery</title>
+<!--    <link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/jq.css">
+    <link rel="stylesheet" href="css/flex.css">
+<!--    <link rel="stylesheet" href="css/responsive.css">-->
+    <link>
+  </head>
+  <body>
+   <header class="main-header">
+    <div class="top">
+     <h1>Full Stack Course</h1>
+      <nav>
+       <ul class="main_nav">
+        <a href="index.html"><li>MAIN</li></a>
+        <a href="html.html"><li>html</li></a>
+        <a href=""><li>Css</li></a>
+        <a href=""><li class="selected">JavaScript</li></a>
+        <a href=""><li>DevTools</li></a>
+        <a href=""><li>Blog</li></a>
+        <a href=""><li>About</li></a>
+        <a href=""><li>Contact</li></a>
+      </ul>
+     </nav>
+    </div>
+   </header>
+    <main>
+    <div class="primary col">
+    <h2>jQuery</h2>
+    <p>Till now we lerned JavaScript vanilla, that's the basic plain js syntax. 
+    how did we get all the div's with the text 'a' ? recrusion...
+    but with jQuery you can do that realy easily.</p>
+    
+    <h4>Selectors</h4>
+    <p>jQuery : a cross-platform (browser) and most papuler JavaScript library, was developed and published 2006.<br>
+    selectors is the basic syntax: for example:</p>
+    <kbd>jQuery( selector [, context ] )</kbd>
+    <p>in reality: <br>
+    <kbd>jQuery('div')</kbd>
+    <kbd>jQuery('div', jQuery('.main-header-top-strip'))</kbd>
+    <kbd>jQuery('.main-header-top-strip div')</kbd>
+    <br>
+    its actualy same as : <br>
+    <kbd>document.querySelectorAll('.main-header-top-strip div')</kbd>
+    </p>
+    <p>
+      jQuery( element )
+      and how to use jquery with elements: <br>
+      <kbd></kbd><br>
+      and arrays - jQuery( elementArray ) <br>
+      <kbd></kbd>
+    </p>
+    <img src="img/%E2%80%8F%E2%80%8Fjq.PNG" alt="">
+    
+    <p>
+      more examples in the slides 26+27, animation and more Ajax.
+    </p>
+    <a href="http://webmaster.org.il/articles/jquery" target="_blank" class="button">Explenation in Hebrow</a>
+     </div>
+    
+     <div class="secondary col">
+       <h2>The doller $$$$$</h2>
+       <img class="content-img" src="img/jquery.gif">
+       
+    <p>how to got all child nodes to get all ? 
+    <br>
+    in jquery its very simple. 
+    filter () and find() <br>
+       <kbd> $( "ul" ).find( "li" ).filter( ":even" );</kbd> 
+    </p>
+    <p>There are many special selectors in jQ that are unike and easier to work wuth then the selectors availabole in Css3. <br>
+    </p>
+    <h4>Chaining</h4>
+    <p>
+      <kbd>$("li").filter(":even").end().filter(":odd")</kbd><br>
+      end() - finish the previous commend and run somthing else. 
+      <br>
+      in this example, it does the 2 oposites commends on the same <kbd>li</kbd>
+      in the same code line.
+    </p>
+    
+    <h4>get() vs []</h4>
+    <p>
+      <kbd>$("li")get()</kbd> will get all the li elements as array. <br>
+      same as <kbd>$("li")[]</kbd> . 
+    </p>
+    <h4>.eq()</h4>
+    <p>
+    <kbd>$( "ul" ).find( "li" ).eq( 2 );</kbd>
+    </p>
+    
+    
+    <a href="https://www.youtube.com/watch?v=BWXggB-T1jQ" target="_blank" class="button">jQuery tutorial</a>
+     </div>
+     <div class="third col">
+       <h2>jQuery & ajax</h2>
+       <p>The most importent use for jquery, is the ajax (and it's giant libary regarding that subjuct). </p>
+       <p>
+       Promise - insted of runing a function, we will return a promise object that will call the function.
+       </p>
+       
+       <ol>
+         <a href="http://api.jquery.com/" target="_blank" ><li class="linkHw">jQuery core documantation</li></a>
+          <a href="https://jqueryui.com/" target="_blank" ><li class="linkHw">jQuery UI library</li></a>
+           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank"><li class="linkHw">Promise, MDN</li></a>
+           <a href="https://www.getpostman.com/" target="_blank"><li class="linkHw">Postman website</li></a>
+           <a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en" target="_blank"><li class="linkHw">Get postman extension</li></a>
+       </ol>
+     </div>
+    </main>
+    <footer class="main-footer">
+       <a href="https://www.facebook.com/yoav.benzion.5" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook logo" class="social-icon"></a>
+        <a href="https://twitter.com/Yoav_BenZion" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter logo" class="social-icon"></a>
+        <a href="https://www.linkedin.com/in/yoav-benzion-45818360/" target="_blank"><img src="img/linkedin-wrap.png" alt="linkedin logo" class="social-icon"></a>
+        <a href="https://www.instagram.com/yoavbenz/?hl=en" target="_blank" > <img src="img/instagram_filters.png" alt="instagram logo" class="social-icon"></a>
+         <a href="https://stackoverflow.com/users/8386160/yoav-b?tab=profile" target="_blank" > <img src="img/stackoverflow-wrap.png" alt="stackoverflow logo" class="social-icon"></a>
+        <a href="whatsapp://send?text=Hello World!&phone=+972584909020"  target="_blank"> <img src="img/whatsapp-wrap.png" alt="WhatsApp log" class="social-icon"></a>
+        <p>&copy; 2017 Yoav Benzion. (ping me on WhatsApp)</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
